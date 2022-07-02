@@ -9,5 +9,5 @@ COPY --from=builder /app/dist ./dist
 COPY --from=builder /app/package.json .
 COPY --from=builder /app/yarn.lock .
 RUN yarn install --production
-EXPOSE 8080 8000
+EXPOSE 8080
 CMD [ "node", "dist/server.js" ]
