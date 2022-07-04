@@ -20,6 +20,7 @@
     "knex": "^2.1.0",
     "pg": "^8.7.3",
     "postgraphile": "^4.12.11",
+    "unique-names-generator": "^4.7.1",
     "zod": "^3.17.3"
   }
 }
