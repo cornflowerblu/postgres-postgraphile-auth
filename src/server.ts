@@ -1,4 +1,5 @@
 import Hapi from '@hapi/hapi'
+import InitGraphQL from './graphql';
 
 const init = async () => {
 
@@ -31,3 +32,7 @@ process.on('unhandledRejection', (err) => {
 });
 
 init()
+    .then()
+InitGraphQL()
+    .finally()
+console.log('GraphQL Initialized')
