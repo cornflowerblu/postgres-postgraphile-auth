@@ -16,6 +16,10 @@
   },
   "dependencies": {
     "@hapi/hapi": "^20.2.2",
-    "postgraphile": "^4.12.11"
+    "dotenv": "^16.0.1",
+    "knex": "^2.1.0",
+    "pg": "^8.7.3",
+    "postgraphile": "^4.12.11",
+    "zod": "^3.17.3"
   }
 }

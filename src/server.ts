@@ -1,4 +1,5 @@
 import Hapi from '@hapi/hapi'
+import userRoutes from './api/create-user';
 import InitGraphQL from './graphql';
 
 const init = async () => {
@@ -16,13 +17,7 @@ const init = async () => {
     console.log('Server running on %s', server.info.uri);
 
     //Load up the routes
-    server.route({
-        method: 'GET',
-        path: '/hello',
-        handler: (_request, h) => {
-            return h.response('Hello World')
-        }
-    })
+    server.route(userRoutes)
 }
 
 process.on('unhandledRejection', (err) => {
